@@ -244,7 +244,27 @@
                     { q: "深圳地铁信号系统(CBTC)指的是？", options: [{ t: "基于通信的列车控制", score: 10 }, { t: "手动控制", score: 0 }, { t: "卫星控制", score: 0 }, { t: "红绿灯控制", score: 0 }] },
                     { q: "以下哪条线采用了中车株机生产的列车？", options: [{ t: "11 号线", score: 10 }, { t: "4 号线", score: 0 }, { t: "3 号线", score: 0 }, { t: "10 号线", score: 0 }] }
                 ]
-            ]
+            ],
+
+metroL4: [
+    [
+        { q: "深圳地铁4号线的供电制式是什么？", options: [{ t: "DC1500V架空电缆", score: 10 }, { t: "DC750V接触轨", score: 0 }, { t: "AC25kV架空接触网", score: 0 }, { t: "DC3000V接触网", score: 0 }] },
+        { q: "深圳地铁4号线的行车模式是什么？", options: [{ t: "单向行车", score: 10 }, { t: "双向行车", score: 0 }, { t: "环线行车", score: 0 }, { t: "折返行车", score: 0 }] },
+        { q: "深圳地铁4号线二期开通时间是？", options: [{ t: "2011-06-18", score: 10 }, { t: "2010-06-18", score: 0 }, { t: "2011-08-28", score: 0 }, { t: "2012-06-18", score: 0 }] },
+        { q: "福田口岸站最初叫什么名字？", options: [{ t: "皇岗", score: 10 }, { t: "福民", score: 0 }, { t: "会展中心", score: 0 }, { t: "落马洲", score: 0 }] },
+        { q: "深圳地铁4号线运营商的全名是？", options: [{ t: "港铁轨道交通（深圳）有限公司", score: 10 }, { t: "深圳地铁集团有限公司", score: 0 }, { t: "港铁（深圳）有限公司", score: 0 }, { t: "港铁铁路有限公司", score: 0 }] },
+        { q: "深圳地铁4号线最长的区间是？", options: [{ t: "上梅林-民乐", score: 10 }, { t: "清湖-龙华", score: 0 }, { t: "福田口岸-少年宫", score: 0 }, { t: "上塘-红山", score: 0 }] },
+        { q: "福田口岸站的换乘模式是什么？", options: [{ t: "出站换乘", score: 10 }, { t: "同台换乘", score: 0 }, { t: "站内换乘", score: 0 }, { t: "垂直换乘", score: 0 }] },
+        { q: "深圳地铁4号线的车辆段/停车场有哪些？", options: [{ t: "龙华车辆段，观澜车辆段", score: 10 }, { t: "前海车辆段，塘朗车辆段", score: 0 }, { t: "赤湾车辆段，机场东车辆段", score: 0 }, { t: "中心公园车辆段，牛湖车辆段", score: 0 }] },
+        { q: "深圳地铁4号线的控制中心是？", options: [{ t: "深云NOCC", score: 10 }, { t: "竹子林OCC", score: 0 }, { t: "福田OCC", score: 0 }, { t: "塘朗NOCC", score: 0 }] },
+        { q: "在哪个车站可以换乘有轨电车，而且地铁站与有轨电车站同名？", options: [{ t: "清湖", score: 10 }, { t: "福田口岸", score: 0 }, { t: "龙华", score: 0 }, { t: "观澜", score: 0 }] },
+        { q: "2011年4号线采用什么编组？", options: [{ t: "4A", score: 10 }, { t: "6B", score: 0 }, { t: "8A", score: 0 }, { t: "2B", score: 0 }] },
+        { q: "4号线哪一站是西班牙式站台？", options: [{ t: "福田口岸", score: 10 }, { t: "清湖", score: 0 }, { t: "上梅林", score: 0 }, { t: "龙华", score: 0 }] },
+        { q: "深圳地铁4号线是以什么模式运营？", options: [{ t: "PPP模式", score: 10 }, { t: "国有独资模式", score: 0 }, { t: "BOT+EPC混合模式", score: 0 }, { t: "纯委托运营模式", score: 0 }] },
+        { q: "4号线哪个区间是明暗挖结合超长隧道？", options: [{ t: "上梅林-民乐", score: 10 }, { t: "福田口岸-会展中心", score: 0 }, { t: "清湖-龙华", score: 0 }, { t: "红山-深圳北", score: 0 }] },
+        { q: "深圳地铁4号线三期车站里最晚开通、暂缓开通的是哪个车站？", options: [{ t: "没有", score: 10 }, { t: "上芬", score: 0 }, { t: "长湖", score: 0 }, { t: "元芬", score: 0 }] }
+    ]
+],
         };
 
         const LINE_COLORS = {
@@ -332,6 +352,10 @@
                                 <h3 class="text-lg font-bold text-rose-700">🔴 我要难的！！！</h3>
                                 <p class="text-xs text-gray-500 mt-2">覆盖技术、信号、工程及深铁发展史。</p>
                             </button>
+                            <button onclick="app.startQuiz('metroL4')" class="w-full text-left p-6 rounded-[2rem] border-2 border-sky-50 bg-white/40 hover:border-sky-500 hover:bg-white transition-all shadow-sm">
+                                <h3 class="text-lg font-bold text-sky-700">🟣 港铁L4</h3>
+                                <p class="text-xs text-gray-500 mt-2">某个港铁深圳米叫我做这个，我做了。</p>
+                            </button>
                         </div>
                     </div>
                 `;
@@ -392,7 +416,7 @@
                         <div class="flex justify-between items-start mb-8 flex-wrap gap-2">
                             <div>
                                 <span class="text-[10px] font-black text-blue-600 uppercase tracking-widest">Question ${state.currentIdx + 1} / 15</span>
-                                <h3 class="text-2xl font-black text-gray-900 mt-1">${state.mode === 'easy' ? '简单点的' : '难点的'}测题</h3>
+                                <h3 class="text-2xl font-black text-gray-900 mt-1">${state.mode === 'easy' ? '简单点的' : state.mode === 'hard' ? '难点的' : '港铁L4'}测题</h3>
                             </div>
                             <div class="text-right">
                                 <div class="text-2xl font-black text-gray-200">${Math.round(progress)}%</div>
@@ -485,4 +509,4 @@
         window.closeDisclaimer = closeDisclaimer;
     </script>
 </body>
-</html>
+</html
