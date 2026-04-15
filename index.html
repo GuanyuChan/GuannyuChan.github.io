@@ -103,6 +103,11 @@
         .option-btn {
             transition: all 0.2s ease;
         }
+
+        /* 菜单 Tab 切换动画 */
+        #tab-content {
+            transition: opacity 0.22s ease, transform 0.22s ease;
+        }
     </style>
 </head>
 <body class="p-4">
@@ -265,7 +270,47 @@ metroL4: [
         { q: "深圳地铁4号线三期车站里最晚开通、暂缓开通的是哪个车站？", options: [{ t: "没有", score: 10 }, { t: "上芬", score: 0 }, { t: "长湖", score: 0 }, { t: "元芬", score: 0 }] }
     ]
 ],
-        };
+
+            line7: [
+                [
+                    { q: "深圳地铁7号线的识别色是？", options: [{ t: "深蓝色", score: 10 }, { t: "天蓝色", score: 0 }, { t: "翠绿色", score: 0 }, { t: "橙黄色", score: 0 }] },
+                    { q: "7号线的起点站是？", options: [{ t: "西丽", score: 10 }, { t: "太安", score: 0 }, { t: "购物公园", score: 0 }, { t: "深圳大学", score: 0 }] },
+                    { q: "7号线的终点站是？", options: [{ t: "太安", score: 10 }, { t: "西丽", score: 0 }, { t: "华南城", score: 0 }, { t: "笋岗", score: 0 }] },
+                    { q: "以下哪个是7号线上预留但目前尚未开通的车站？", options: [{ t: "福邻站", score: 10 }, { t: "华强北站", score: 0 }, { t: "购物公园站", score: 0 }, { t: "西丽站", score: 0 }] },
+                    { q: "7号线上的文体公园站目前处于什么状态？", options: [{ t: "预留暂未开通", score: 10 }, { t: "正常运营中", score: 0 }, { t: "已永久取消", score: 0 }, { t: "改名后运营", score: 0 }] },
+                    { q: "7号线与5号线的换乘站是？", options: [{ t: "西丽", score: 10 }, { t: "购物公园", score: 0 }, { t: "深大", score: 0 }, { t: "华强北", score: 0 }] },
+                    { q: "7号线途经的著名电子消费商圈是？", options: [{ t: "华强北", score: 10 }, { t: "东门老街", score: 0 }, { t: "海岸城", score: 0 }, { t: "万象城", score: 0 }] },
+                    { q: "7号线与1号线的换乘站是？", options: [{ t: "购物公园", score: 10 }, { t: "西丽", score: 0 }, { t: "竹子林", score: 0 }, { t: "侨城北", score: 0 }] },
+                    { q: "7号线正式开通运营的年份是？", options: [{ t: "2016年", score: 10 }, { t: "2019年", score: 0 }, { t: "2014年", score: 0 }, { t: "2021年", score: 0 }] },
+                    { q: "7号线在施工中穿越高水位软土层时采用的特殊工法是？", options: [{ t: "冷冻法", score: 10 }, { t: "盾构法", score: 0 }, { t: "明挖法", score: 0 }, { t: "沉管法", score: 0 }] },
+                    { q: "7号线列车的车型编组为？", options: [{ t: "6B型", score: 10 }, { t: "4A型", score: 0 }, { t: "8A型", score: 0 }, { t: "6A型", score: 0 }] },
+                    { q: "7号线与4号线的换乘站是？", options: [{ t: "华强北", score: 10 }, { t: "竹子林", score: 0 }, { t: "侨城北", score: 0 }, { t: "石厦", score: 0 }] },
+                    { q: "7号线属于深圳地铁第几期建设工程？", options: [{ t: "三期", score: 10 }, { t: "二期", score: 0 }, { t: "四期", score: 0 }, { t: "一期", score: 0 }] },
+                    { q: "以下哪个站位于7号线上？", options: [{ t: "笋岗", score: 10 }, { t: "红树湾南", score: 0 }, { t: "岗厦北", score: 0 }, { t: "大运", score: 0 }] },
+                    { q: "7号线在竹子林站可换乘哪两条线路？", options: [{ t: "1号线 & 2号线", score: 10 }, { t: "3号线 & 5号线", score: 0 }, { t: "9号线 & 11号线", score: 0 }, { t: "4号线 & 6号线", score: 0 }] }
+                ]
+            ],
+
+            line11: [
+                [
+                    { q: "11号线列车进入福田站前明显减速，主要原因是？", options: [{ t: "进站坡度大（约28‰下坡），需提前制动", score: 10 }, { t: "福田站限速规定", score: 0 }, { t: "进站弯道太急", score: 0 }, { t: "站台长度不足", score: 0 }] },
+                    { q: "11号线商务车厢的票价是普通车厢的几倍？", options: [{ t: "3倍", score: 10 }, { t: "2倍", score: 0 }, { t: "1.5倍", score: 0 }, { t: "5倍", score: 0 }] },
+                    { q: "11号线商务车厢的顶部装饰图案是？", options: [{ t: "蓝天白云", score: 10 }, { t: "星空银河", score: 0 }, { t: "深海波浪", score: 0 }, { t: "电路图案", score: 0 }] },
+                    { q: "11号线商务车厢位于列车的哪几节？", options: [{ t: "第1、2节（最前两节）", score: 10 }, { t: "最后两节", score: 0 }, { t: "中间两节", score: 0 }, { t: "全列均为商务", score: 0 }] },
+                    { q: "11号线商务车厢配备的座椅类型是？", options: [{ t: "真皮航空式座椅", score: 10 }, { t: "普通布艺座椅", score: 0 }, { t: "木质长椅", score: 0 }, { t: "折叠硬座", score: 0 }] },
+                    { q: "11号线商务车厢设有哪种充电设施？", options: [{ t: "USB充电口 & 电源插座", score: 10 }, { t: "无充电设施", score: 0 }, { t: "仅无线充电", score: 0 }, { t: "仅USB充电口", score: 0 }] },
+                    { q: "11号线的最高运行速度是？", options: [{ t: "120 km/h", score: 10 }, { t: "100 km/h", score: 0 }, { t: "80 km/h", score: 0 }, { t: "140 km/h", score: 0 }] },
+                    { q: "11号线俗称是？", options: [{ t: "机场快线", score: 10 }, { t: "滨海快线", score: 0 }, { t: "宝安专线", score: 0 }, { t: "CBD快线", score: 0 }] },
+                    { q: "11号线哪段是全线最震撼的跨海/海底区间？", options: [{ t: "碧海湾 - 机场", score: 10 }, { t: "后海 - 红树湾南", score: 0 }, { t: "机场 - 福永", score: 0 }, { t: "赤湾 - 海上世界", score: 0 }] },
+                    { q: "11号线列车由哪家企业生产？", options: [{ t: "中车株洲电力机车（株机）", score: 10 }, { t: "中车青岛四方", score: 0 }, { t: "庞巴迪", score: 0 }, { t: "阿尔斯通", score: 0 }] },
+                    { q: "11号线的识别色是？", options: [{ t: "暗紫红色", score: 10 }, { t: "粉红色", score: 0 }, { t: "深蓝色", score: 0 }, { t: "金黄色", score: 0 }] },
+                    { q: "11号线福田站是深圳地铁极罕见的超深层车站，其站台约在地下多少米？", options: [{ t: "约34米（地下3~4层）", score: 10 }, { t: "约10米（地下1层）", score: 0 }, { t: "约20米（地下2层）", score: 0 }, { t: "约60米（地下6层）", score: 0 }] },
+                    { q: "11号线商务车厢每节能容纳多少名乘客（座位数）？", options: [{ t: "约50座", score: 10 }, { t: "约10座", score: 0 }, { t: "约100座", score: 0 }, { t: "约30座", score: 0 }] },
+                    { q: "以下哪项不属于11号线商务车厢的特色？", options: [{ t: "专属独立卫生间", score: 10 }, { t: "宽体真皮座椅", score: 0 }, { t: "USB充电接口", score: 0 }, { t: "蓝天白云顶部装饰", score: 0 }] },
+                    { q: "11号线属于深圳地铁第几期建设工程？", options: [{ t: "三期", score: 10 }, { t: "二期", score: 0 }, { t: "四期", score: 0 }, { t: "一期", score: 0 }] }
+                ]
+            ],
+        }
 
         const LINE_COLORS = {
             "1": "#00ab39", "2": "#db6d1c", "3": "#00a2e1", "4": "#dc241f",
@@ -332,6 +377,7 @@ metroL4: [
 
             renderMenu(container) {
                 const high = localStorage.getItem('sz_metro_high_score') || 0;
+                if (!state.menuTab) state.menuTab = 'basic';
                 container.innerHTML = `
                     <div class="metro-gradient p-12 text-white text-center animate-fade">
                         <div class="inline-block px-3 py-1 bg-white/20 rounded-full text-[10px] font-bold tracking-widest uppercase mb-4">品 质 胶 桶 （划掉）</div>
@@ -339,26 +385,72 @@ metroL4: [
                         <p class="text-xs opacity-60">你对深圳地铁有何了解呢？</p>
                     </div>
                     <div class="p-8 animate-fade">
-                        <div class="flex justify-between items-center mb-8">
+                        <div class="flex justify-between items-center mb-4">
                             <h2 class="text-xl font-bold text-gray-800">选择难度</h2>
                             <div class="text-xs text-gray-400 bg-gray-50 px-3 py-1 rounded-full border border-gray-100">最高分: ${high}</div>
                         </div>
-                        <div class="space-y-4 pb-6">
-                            <button onclick="app.startQuiz('easy')" class="w-full text-left p-6 rounded-[2rem] border-2 border-emerald-50 bg-white/40 hover:border-emerald-500 hover:bg-white transition-all shadow-sm">
-                                <h3 class="text-lg font-bold text-emerald-700">🟢 啊~简单点的</h3>
-                                <p class="text-xs text-gray-500 mt-2">覆盖主要线路与常识。</p>
-                            </button>
-                            <button onclick="app.startQuiz('hard')" class="w-full text-left p-6 rounded-[2rem] border-2 border-rose-50 bg-white/40 hover:border-rose-500 hover:bg-white transition-all shadow-sm">
-                                <h3 class="text-lg font-bold text-rose-700">🔴 我要难的！！！</h3>
-                                <p class="text-xs text-gray-500 mt-2">覆盖技术、信号、工程及深铁发展史。</p>
-                            </button>
-                            <button onclick="app.startQuiz('metroL4')" class="w-full text-left p-6 rounded-[2rem] border-2 border-sky-50 bg-white/40 hover:border-sky-500 hover:bg-white transition-all shadow-sm">
-                                <h3 class="text-lg font-bold text-sky-700">🟣 港铁L4</h3>
-                                <p class="text-xs text-gray-500 mt-2">某个港铁深圳米叫我做这个，我做了。</p>
-                            </button>
+                        <div class="flex gap-1 mb-5 p-1 bg-gray-100/80 rounded-2xl">
+                            <button data-tab="basic" onclick="app.switchTab('basic')" class="menu-tab-pill flex-1 py-2 rounded-xl text-sm font-bold transition-all duration-200 ${state.menuTab === 'basic' ? 'bg-white shadow-sm text-gray-800' : 'text-gray-400 hover:text-gray-600'}">基本</button>
+                            <button data-tab="ext" onclick="app.switchTab('ext')" class="menu-tab-pill flex-1 py-2 rounded-xl text-sm font-bold transition-all duration-200 ${state.menuTab === 'ext' ? 'bg-white shadow-sm text-gray-800' : 'text-gray-400 hover:text-gray-600'}">扩展</button>
+                        </div>
+                        <div id="tab-content" class="space-y-4 pb-6">
+                            ${this.getTabContent()}
                         </div>
                     </div>
                 `;
+            },
+
+            getTabContent() {
+                if (state.menuTab === 'basic') {
+                    return `
+                        <h2 class="text-m font-bold text-gray-400 mb-2">最基本的题目啦，覆盖整个深圳地铁</h2>
+                        <button onclick="app.startQuiz('easy')" class="w-full text-left p-6 rounded-[2rem] border-2 border-emerald-50 bg-white/40 hover:border-emerald-500 hover:bg-white transition-all shadow-sm">
+                            <h3 class="text-lg font-bold text-emerald-700">🟢 啊~简单点的</h3>
+                            <p class="text-xs text-gray-500 mt-2">覆盖主要线路与常识。</p>
+                        </button>
+                        <button onclick="app.startQuiz('hard')" class="w-full text-left p-6 rounded-[2rem] border-2 border-rose-50 bg-white/40 hover:border-rose-500 hover:bg-white transition-all shadow-sm">
+                            <h3 class="text-lg font-bold text-rose-700">🔴 我要难的！！！</h3>
+                            <p class="text-xs text-gray-500 mt-2">覆盖技术、信号、工程及深铁发展史。</p>
+                        </button>
+                    `;
+                } else {
+                    return `
+                        <h2 class="text-m font-bold text-gray-400 mb-2">覆盖了个别线路，持续更新qwq</h2>
+                        <button onclick="app.startQuiz('metroL4')" class="w-full text-left p-6 rounded-[2rem] border-2 border-red-50 bg-white/40 hover:border-red-500 hover:bg-white transition-all shadow-sm">
+                            <h3 class="text-lg font-bold" style="color:#dc241f">🔴 4号线</h3>
+                            <p class="text-xs text-gray-500 mt-2">某个港铁深圳米叫我做这个，我做了。</p>
+                        </button>
+                        <button onclick="app.startQuiz('line7')" class="w-full text-left p-6 rounded-[2rem] border-2 border-blue-50 bg-white/40 hover:border-blue-500 hover:bg-white transition-all shadow-sm">
+                            <h3 class="text-lg font-bold" style="color:#0035ad">🔵 7号线</h3>
+                            <p class="text-xs text-gray-500 mt-2">狗椅狗都不坐，快倒闭</p>
+                        </button>
+                        <button onclick="app.startQuiz('line11')" 
+                            class="w-full text-left p-6 rounded-[2rem] border-2 border-gray-100 bg-white/40 
+                            hover:border-[#6a1d44] hover:bg-white transition-all shadow-sm">
+                            <h3 class="text-lg font-bold" style="color:#6a1d44">🟤 11号线专题</h3>
+                            <p class="text-xs text-gray-500 mt-2">啊啊啊啊~猫好烧！！！！！</p>
+                        </button>
+                    `;
+                }
+            },
+
+            switchTab(tab) {
+                if (state.menuTab === tab) return;
+                const content = document.getElementById('tab-content');
+                document.querySelectorAll('.menu-tab-pill').forEach(btn => {
+                    const active = btn.dataset.tab === tab;
+                    btn.className = `menu-tab-pill flex-1 py-2 rounded-xl text-sm font-bold transition-all duration-200 ${active ? 'bg-white shadow-sm text-gray-800' : 'text-gray-400 hover:text-gray-600'}`;
+                });
+                if (content) {
+                    content.style.opacity = '0';
+                    content.style.transform = 'translateY(8px)';
+                    setTimeout(() => {
+                        state.menuTab = tab;
+                        content.innerHTML = this.getTabContent();
+                        content.style.opacity = '1';
+                        content.style.transform = 'translateY(0)';
+                    }, 220);
+                }
             },
 
             startQuiz(mode) {
@@ -416,7 +508,7 @@ metroL4: [
                         <div class="flex justify-between items-start mb-8 flex-wrap gap-2">
                             <div>
                                 <span class="text-[10px] font-black text-blue-600 uppercase tracking-widest">Question ${state.currentIdx + 1} / 15</span>
-                                <h3 class="text-2xl font-black text-gray-900 mt-1">${state.mode === 'easy' ? '简单点的' : state.mode === 'hard' ? '难点的' : '港铁L4'}测题</h3>
+                                <h3 class="text-2xl font-black text-gray-900 mt-1">${state.mode === 'easy' ? '简单点的' : state.mode === 'hard' ? '难点的' : state.mode === 'metroL4' ? '4号线' : state.mode === 'line7' ? '7号线' : '11号线'}测题</h3>
                             </div>
                             <div class="text-right">
                                 <div class="text-2xl font-black text-gray-200">${Math.round(progress)}%</div>
